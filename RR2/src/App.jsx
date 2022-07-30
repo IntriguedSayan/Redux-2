@@ -1,4 +1,5 @@
-import Home from "./Home/Home"
+import Navbar from "./Navbar/Navbar"
+import AllRoutes from "./Routes/AllRoutes"
 
 
 function App() {
@@ -6,7 +7,8 @@ function App() {
 
   return (
     <div>
-      <Home/>
+      <Navbar/>
+      <AllRoutes/>
     </div>
   )
 }
