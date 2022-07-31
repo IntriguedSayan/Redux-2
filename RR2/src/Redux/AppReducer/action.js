@@ -61,3 +61,36 @@ export const deleteFailure=()=>{
 
     return {type:types.DELETE_FAILURE}
 }
+
+export const getTodoReQuest=()=>{
+
+    return {type:types.GET_TODO_REQUEST}
+}
+
+export const getTodoSuccess=(payload)=>{
+
+    return {type:types.GET_TODO_SUCCESS,payload}
+}
+
+export const getTodoFailure=()=>{
+
+    return {type:types.GET_TODO_FAILURE}
+}
+
+export const editRequest=()=>{
+
+    return {type:types.EDIT_REQUEST}
+}
+
+
+export const editSuccessful=()=>{
+
+    return {type:types.EDIT_SUCCESSFUL}
+}
+
+
+export const editFailure=()=>{
+
+    return {type:types.EDIT_FAILURE}
+}
+
