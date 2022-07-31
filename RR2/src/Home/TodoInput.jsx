@@ -4,6 +4,7 @@ import { useState } from "react";
 export default function TodoInput({addTodo}){
 
     const[currTodo,setCurrTodo]=useState("")
+    
     const handleAdd=()=>{
         const payload={
             id:Date.now(),

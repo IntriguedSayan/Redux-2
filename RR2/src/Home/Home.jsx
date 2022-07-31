@@ -11,9 +11,9 @@ export default function Home(){
     const dispatch=useDispatch()
 const {isLoading,isError,todos}=useSelector((store)=>{
     return{
-        isLoading:store.isLoading,
-        isError:store.isError,
-        todos:store.todos
+        isLoading:store.AppReducer.isLoading,
+        isError:store.AppReducer.isError,
+        todos:store.AppReducer.todos
     }
 },shallowEqual)
 

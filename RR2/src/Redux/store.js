@@ -1,8 +1,10 @@
-import {legacy_createStore} from "redux"
-import { reducer } from "./AppReducer/reducer"
+import {legacy_createStore,combineReducers} from "redux"
+import { reducer as AppReducer} from "./AppReducer/reducer"
+import { reducer as AuthReducer } from "./AuthReducer/reducer"
 
+const rootReducer=combineReducers({AppReducer,AuthReducer})
 
-const store=legacy_createStore(reducer)
+const store=legacy_createStore(rootReducer)
 
 
 

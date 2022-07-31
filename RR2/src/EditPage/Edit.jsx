@@ -13,7 +13,7 @@ export default function Edit(){
     const dispatch=useDispatch()
     const {todo}=useSelector((store)=>{
         return{
-            todo:store.todo
+            todo:store.AppReducer.todo
         }
     },shallowEqual)
     // console.log(params)
