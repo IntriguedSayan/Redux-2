@@ -4,7 +4,7 @@ import { reducer as AuthReducer } from "./AuthReducer/reducer"
 
 const rootReducer=combineReducers({AppReducer,AuthReducer})
 
-const store=legacy_createStore(rootReducer)
+const store=legacy_createStore(rootReducer,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
 
 
